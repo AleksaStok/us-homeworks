@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Contacts</title>
+  </head>
+  <body>
+    <header>
+      <table>
+        <tr>
+          <td><img src="http://placehold.jp/140x50.png" alt="logo" /></td>
+          <td><a href="index.html">About us</a></td>
+          <td><a href="prod.html">Our products</a></td>
+          <td><a href="#cont">Contacts</a></td>
+          <td>
+            <input type="search" name="search" placeholder="Search" size="15" />
+          </td>
+        </tr>
+      </table>
+      <hr />
+    </header>
+    <main id="cont">
+      <h1>Write Us:</h1>
+      <form>
+        <table>
+          <tr>
+            <td>
+              <fieldset>
+                <legend>Suggestions</legend>
+                <table>
+                  <tr>
+                    <td>
+                      <input
+                        type="text"
+                        name="topic"
+                        placeholder="Topic"
+                        minlength="20"
+                        size="20"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <textarea
+                        name="message"
+                        placeholder="Write here"
+                        rows="10"
+                        cols="30"
+                      ></textarea>
+                    </td>
+                  </tr>
+                </table>
+              </fieldset>
+            </td>
+            <td>
+              <fieldset>
+                <legend>Complaints</legend>
+                <table>
+                  <tr>
+                    <td>
+                      <input
+                        type="text"
+                        name="topic"
+                        placeholder="Topic"
+                        minlength="20"
+                        size="20"
+                        disabled
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <textarea
+                        name="message"
+                        placeholder="Write here"
+                        rows="10"
+                        cols="30"
+                        disabled
+                      ></textarea>
+                    </td>
+                  </tr>
+                </table>
+              </fieldset>
+            </td>
+          </tr>
+        </table>
+        <fieldset>
+          <legend>Are you satisfied with the result?</legend>
+          <table>
+            <tr>
+              <td>
+                <label for="yes">Yes</label>
+                <input id="yes" type="radio" name="result" required />
+              </td>
+              <td>
+                <label for="no">No</label>
+                <input id="no" type="radio" name="result" required />
+              </td>
+              <td>
+                <label for="50/50">50/50</label>
+                <input id="50/50" type="radio" name="result" required />
+              </td>
+            </tr>
+          </table>
+        </fieldset>
+        <br />
+        <input type="submit" value="Send" />
+      </form>
+    </main>
+    <footer>
+      <br />
+      <hr />
+      <p>&copy; Copyright 2022, USoftware</p>
+    </footer>
+  </body>
+</html>
